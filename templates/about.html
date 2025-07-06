@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Enhancing Product Reliability</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9fafb;
+    }
+  </style>
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-gray-900 text-white p-6 shadow-md">
+    <nav class="container mx-auto flex justify-between items-center">
+      <div class="text-xl font-extrabold tracking-wide">ENHANCING PRODUCT RELIABILITY</div>
+      <ul class="flex space-x-6 text-sm">
+        <li><a href="/" class="hover:text-gray-300">HOME</a></li>
+        <li><a href="/about" class="border-b-2 border-white font-semibold">ABOUT</a></li>
+        <li><a href="/contact" class="hover:text-gray-300">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow px-6 py-12">
+    <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
+      <h1 class="text-4xl font-extrabold text-gray-800 mb-6">About Us</h1>
+
+      <p class="text-gray-700 text-lg leading-relaxed mb-6">
+        We are a team passionate about solving real-world problems in manufacturing using the power of artificial
+        intelligence. Our project, <strong>Enhancing Product Reliability</strong>, focuses on automating the detection
+        of casting defects using deep learning.
+      </p>
+
+      <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">The Problem</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Casting is a widely used manufacturing process where molten material is poured into a mold to form a desired
+        shape. However, this process is prone to defects such as blow holes, pinholes, burrs, shrinkage cavities, and
+        metallurgical inconsistencies. These defects can compromise product quality and lead to costly rejections.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Most industries rely on manual inspection to detect these flaws. This process is slow, labor-intensive, and not
+        always accurate. Even a small oversight can result in the rejection of an entire batch, causing significant
+        financial loss.
+      </p>
+
+      <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Our Motivation</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        I am part of a team in the casting industry. I'm trying to ensure that every product we ship is free from
+        defects, but our current inspection process is manual and inconsistent, because it relies on human judgment,
+        which is time-consuming and prone to error — which makes me feel frustrated and worried about costly rejections
+        and production delays.
+      </p>
+
+      <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Our Solution</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        To address this, we developed a deep learning model using transfer learning with the VGG16 architecture. This
+        model is trained to classify casting products as either defective or good based on image data. By integrating
+        this model into a web application, we provide a simple and efficient tool for automated quality inspection.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Our goal is to reduce inspection time, improve accuracy, and help manufacturers maintain high standards of
+        product reliability — all while minimizing waste and cost.
+      </p>
+
+      <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Technology Stack</h2>
+      <ul class="list-disc list-inside text-gray-700 leading-relaxed">
+        <li>Python & Flask for backend development</li>
+        <li>TensorFlow and Keras for deep learning and transfer learning</li>
+        <li>VGG16 pre-trained model for image classification</li>
+        <li>Tailwind CSS for responsive and modern UI design</li>
+      </ul>
+
+      <p class="text-gray-700 leading-relaxed mt-6">
+        We believe that combining AI with practical manufacturing needs can lead to smarter, faster, and more reliable
+        production processes.
+      </p>
+    </div>
+  </main>
+
+</body>
+
+</html>

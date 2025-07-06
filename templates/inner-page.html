@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload Image - Enhancing Product Reliability</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9fafb;
+    }
+  </style>
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-gray-900 text-white p-6 shadow-md">
+    <nav class="container mx-auto flex justify-between items-center">
+      <div class="text-xl font-extrabold tracking-wide">ENHANCING PRODUCT RELIABILITY</div>
+      <ul class="flex space-x-6 text-sm">
+        <li><a href="/" class="hover:text-gray-300">HOME</a></li>
+        <li><a href="/about" class="hover:text-gray-300">ABOUT</a></li>
+        <li><a href="/contact" class="hover:text-gray-300">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow flex items-center justify-center px-4 py-12">
+    <div class="bg-white shadow-lg rounded-lg p-8 max-w-md w-full text-center">
+      <h1 class="text-2xl font-bold text-gray-800 mb-6">Upload an Image for Fault Detection</h1>
+      <form action="/output" method="POST" enctype="multipart/form-data" class="space-y-6">
+        <div>
+          <input type="file" name="file" accept="image/*" required
+            class="block w-full text-sm text-gray-700 border border-gray-300 rounded-md cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+        </div>
+        <button type="submit"
+          class="w-full bg-blue-600 text-white py-2 px-4 rounded-md font-semibold hover:bg-blue-700 transition">
+          Predict
+        </button>
+      </form>
+    </div>
+  </main>
+
+</body>
+
+</html>
