@@ -7,7 +7,7 @@ dataset link: https://www.kaggle.com/datasets/ravirajsinh45/real-life-industrial
 ```bash
 # Step 1: Clone the repo
 git clone https://github.com/KavishaHaswani/Transfer-Learning-for-Fault-Detection.git
-cd casting-defect-detection/uploads
+cd Transfer-Learning-for-Fault-Detection/uploads
 
 # Step 2: Install dependencies
 pip install -r requirements.txt
